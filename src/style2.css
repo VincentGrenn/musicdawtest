@@ -1,0 +1,61 @@
+:root {
+    --main-font: Poppins;
+    --playhead-height: 100vh;
+}
+
+body {
+    font-family: var(--main-font);
+    color: white;
+    background-color: cadetblue;
+}
+
+#timeline label {
+    font-family: Kanit;
+    font-size: 25px;
+    margin: 25px;
+}
+
+#playhead {
+    width: 1vh;
+    height: var(--playhead-height);
+    background-color: white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+
+}
+
+#controls {
+    width: 90vw;
+    height: 15vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: var(--main-font);
+    background-color: black;
+}
+
+#controls button {
+    width: 50px;
+    height: 15vh;
+    border: 0px;
+}
+
+#play {
+    background-image: url("./Images/playButton.png");
+}
+
+#stop {
+    background-image: url("./Images/stopButton.png");
+}
+
+#pause {
+    background-image: url("./Images/pauseButton.png");
+}
+
+#workstation {
+    width: 90vw;
+    height: var(--playhead-height);
+    border: 1px solid white;
+    background-color: black;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
