@@ -1,0 +1,54 @@
+:root {
+    --main-font: Poppins;
+}
+
+@keyframes hoverAnimation {
+    from {
+        text-shadow: none;
+    }
+    to {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.75);
+    }
+}
+
+@keyframes clickAnimation {
+    from {
+        text-shadow: none;
+    }
+    to {
+        text-shadow: 0 0 20px rgba(0, 255, 0, 1);
+    }
+}
+
+body {
+    font-family: var(--main-font);
+    text-align: center;
+    color: white;
+    background-color: #5d82f3;
+}
+
+.titles {
+    font-size: 3.5rem;
+}
+
+.descriptions {
+    font-size: 1.25rem;
+    background-color: #0840af;
+    border-radius: 0.25rem;
+}
+.links {
+    font-family: "Comfortaa";
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border: 0px;
+}
+
+.links:hover {
+    animation: hoverAnimation 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
+.links:click {
+    animation: clickAnimation 2s ease-in forwards;
+}
